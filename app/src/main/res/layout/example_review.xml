@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    app:cardBackgroundColor="#0AB6E3"
+    app:cardCornerRadius="5dp"
+    tools:context=".activities.ReviewActivity"
+   >
+
+    <RelativeLayout
+        android:layout_width="427dp"
+        android:layout_height="154dp"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:id="@+id/deleteButton"
+            android:layout_width="64dp"
+            android:layout_height="59dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="17dp"
+            app:srcCompat="@drawable/ic_baseline_delete_forever_24" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/reviewDescTextView"
+            android:layout_width="344dp"
+            android:layout_height="46dp"
+            android:layout_below="@+id/titleTextView"
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="33dp"
+            android:layout_marginBottom="-1dp"
+            android:layout_toStartOf="@+id/deleteButton"
+            android:text="Description"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
